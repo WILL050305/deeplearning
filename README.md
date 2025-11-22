@@ -1,12 +1,12 @@
-# Proyecto YOLO + Frontend + Backend
+# Manual de Uso del Proyecto de Detección de Fisuras (YOLO + FastAPI + React)
 
 Este repositorio contiene un proyecto completo que incluye:
 
 - Un **frontend** hecho con React (Vite).
-- Un **backend** (Node/Express u otro según tu estructura).
+- Un **backend** construido con FastAPI y modelo YOLO.
 - Archivos principales del proyecto como `.gitignore` y `README.md`.
 
-Además, este README funciona como **manual de usuario** con los comandos exactos utilizados para subir el proyecto a GitHub.
+Este README funciona como **manual de usuario** con los comandos exactos para instalar, ejecutar y subir el proyecto a GitHub.
 
 ---
 
@@ -20,6 +20,100 @@ proyecto_yolo/
 │── README.md
 │── package-lock.json
 ```
+
+---
+
+## 🚀 Instalación y Ejecución del Proyecto
+
+### 1. Clonación del Repositorio
+
+```sh
+git clone https://github.com/WILL050305/deeplearning.git
+cd deeplearning
+```
+
+---
+
+## 🖥 Backend (FastAPI + YOLO)
+
+### 2. Acceder al directorio del backend
+
+```sh
+cd backend
+```
+
+### 3. Crear un entorno virtual
+
+```sh
+python -m venv venv
+```
+
+### 4. Activar el entorno virtual
+
+**Windows**
+
+```sh
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```sh
+source venv/bin/activate
+```
+
+### 5. Instalar dependencias
+
+```sh
+pip install -r requirements.txt
+```
+
+### 6. Ejecutar el servidor FastAPI
+
+```sh
+uvicorn main:app --reload
+```
+
+El backend estará disponible en:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 📦 Frontend (React)
+
+### 7. Acceder al directorio del frontend
+
+```sh
+cd ../frontend
+```
+
+### 8. Instalar dependencias
+
+```sh
+npm install
+```
+
+### 9. Ejecutar el servidor de desarrollo
+
+```sh
+npm run dev
+```
+
+El frontend estará disponible en:
+
+```
+http://localhost:5173
+```
+
+---
+
+## ✅ Proyecto en Ejecución
+
+- **Frontend:** http://localhost:5173
+- **Backend:** http://127.0.0.1:8000
 
 ---
 
@@ -98,42 +192,6 @@ git push
 
 ---
 
-## 📦 Frontend (React + Vite)
-
-### Instalar dependencias
-
-```sh
-cd frontend
-npm install
-```
-
-### Ejecutar el servidor de desarrollo
-
-```sh
-npm run dev
-```
-
----
-
-## 🖥 Backend
-
-(Dependiendo de tu backend, normalmente:)
-
-### Instalar dependencias
-
-```sh
-cd backend
-npm install
-```
-
-### Ejecutar el servidor
-
-```sh
-npm start
-```
-
----
-
 ## 🧠 Notas importantes
 
 - Los warnings de CRLF no afectan en Windows.
@@ -151,9 +209,6 @@ npm start
 Si seguiste estos pasos, tu proyecto ya debe estar visible en:
 
 👉 https://github.com/WILL050305/deeplearning
-
-
-
 
 
 
